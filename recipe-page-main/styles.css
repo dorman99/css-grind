@@ -1,0 +1,150 @@
+:root {
+    /* primary */
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+
+    /* neutral */
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%)
+}
+
+@font-face {
+    font-family: wght;
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: young-serif;
+    src: url('./assets//fonts//young-serif/YoungSerif-Regular.ttf');
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        padding-left: 30px;
+    }
+    .container {
+        width: 80%;
+    }
+
+    .content {
+        width: 50%;
+        font-size: 0.6rem;
+    }
+
+    .heading-image {
+        width: 80%;
+        padding-left: 30px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .heading-image {
+        width: 600px;
+    }
+    
+    .container {
+        width: 100%;
+    }
+}
+
+
+
+
+
+.container {
+    background-color: var(--eggshell);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: young-serif;
+}
+
+.heading-image {
+    border-radius: 5px;
+}
+
+.sub-heading-title {
+    font-family: young-serif;
+    color: var(--dark-raspberry);
+    font-weight: bold;
+}
+
+.prep-box {
+    background-color: var(--rose-white);
+    font-family: wght;
+    margin: 10px;
+    padding: 10px;
+}
+
+.content {
+    background-color: var(--white);
+    display: grid;
+    border-radius: 10px;
+    width: 600px;
+    font-family: wght;
+    padding: 20px;
+}
+
+.nutrition-table {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 10px;
+
+}
+
+.nutri-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-left: 50px;
+}
+
+.nutri-value {
+    width: 70%;
+    color: var(--dark-raspberry);
+    font-weight: bold;
+    align-items: start;
+}
+
+.hr {
+    height: 1px;
+}
+
+.nutri-key {
+    width: 30%;
+    text-align: start;
+}
+
+.nutrition-detail {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+li {
+    padding: 5px;
+    margin: 0px;
+}
+
+li::marker {
+    color: var(--dark-raspberry);
+}
+
+.attribution {
+    padding-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
