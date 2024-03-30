@@ -1,0 +1,104 @@
+@font-face {
+    font-family: inter;
+    src: url('./assets//fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+
+@media screen and (max-width: 340px) {
+    #job-title {
+        font-size: 10px !important;
+    }
+}
+
+
+:root {
+    --green-primary: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+body p {
+    font-size: 14px;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    font-family: inter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--off-black);
+    flex-direction: column;
+}
+
+img {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+}
+
+#name {
+    color: var(--white);
+}
+
+#job-title {
+    color: gray;
+    font-size: 14px;
+}
+
+.card {
+    border-radius: 2vh;
+    background-color: var(--dark-grey);
+    margin: 10px;
+}
+
+.content {
+    padding: 10px;
+    display: flex;
+    border-radius: 2vh;
+    background-color: var(--dark-grey);
+    color: var(--white);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.contact {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+button {
+    border-radius: 0.5rem;
+    border: none;
+    background-color: rgb(97, 97, 97);
+    color: var(--white);
+    font-family: inter;
+    width: 20vh;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#name-city {
+    color: var(--green-primary);
+}
+
+button:hover {
+    background-color: var(--green-primary);
+    color: black;
+}
+
+
+.attribution {
+    padding-top: 10vh;
+    color: var(--white);
+}
