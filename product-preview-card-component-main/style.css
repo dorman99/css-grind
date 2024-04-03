@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --v-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 400px) {
+    .card {
+        flex-flow: row;
+        align-content: start;
+        background-color: red !important;
+    }
+}
+
+
+body {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: var(--cream);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: none;
+    width: 70%;
+    margin: 20px;
+}
+
+h1 {
+    font-size: x-large;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.info-detail {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+#category {
+    color: var(--dark-grayish-blue);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: "Montserrat";
+    letter-spacing: 5px;
+}
+
+#description {
+    color: var(--dark-grayish-blue);
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+#selling-price {
+    color: var(--dark-cyan);
+    padding-right: 10px;
+}
+
+#discount-price {
+    font-size: 10px;
+    text-decoration: line-through;
+    color: var(--dark-grayish-blue);
+}
+
+.add-to-cart {
+    display: flex;
+    background-color: var(--dark-cyan);
+    color: white;
+    font-family: 'Montserrat';
+    justify-content: center;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.add-to-cart img {
+    width: 12px;
+    margin-right: 10px;
+}
+
+footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
